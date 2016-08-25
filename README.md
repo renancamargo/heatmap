@@ -6,3 +6,4 @@ Tools:
 - snmp
 - cron
 - wget
+- nano
