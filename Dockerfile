@@ -9,6 +9,7 @@ RUN \
   snmp \
   cron \
   wget \
+  nano \
   && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
