@@ -1,8 +1,16 @@
 FROM ubuntu:latest
 
 RUN \
-  apt-get update && \
-  apt-get -y install snmp && \
-  apt-get -y install cron && \
+  apt-get -y update && \
+  apt-get -y upgrade && \
+  DEBIAN_FRONTEND=noninteractive \
+  apt-get -y install \
+  bash-completion \
+  snmp \
+  cron \
+  wget \
+  && \
   apt-get clean && \
-  rm -rf /var/lib/apt/lists/*
+  rm -rf /var/lib/apt/lists/* \
+  /tmp/* \
+  /var/tmp/* 
