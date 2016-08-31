@@ -7,3 +7,6 @@ Tools:
 - cron
 - wget
 - nano
+- lynx
+- xvfb
+- wkhtmltopdf
