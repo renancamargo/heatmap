@@ -1,12 +1,8 @@
-Docker Ubuntu
+Docker Heat Map
 =============
 
 Tools:
-
+- python
 - snmp
-- cron
-- wget
-- nano
-- lynx
 - xvfb
 - wkhtmltopdf
