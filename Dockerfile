@@ -1,18 +1,10 @@
 FROM ubuntu:latest
 
-RUN \
-  apt-get -y update && \
-  apt-get -y upgrade && \
-  DEBIAN_FRONTEND=noninteractive \
-  apt-get -y install \
-  bash-completion \
-  snmp \
-  cron \
-  wget \
-  nano \
-  lynx-cur \
-  xvfb \
-  wkhtmltopdf \
-  && \
-  apt-get clean && \
-  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
+RUN apt-get update && apt-get install -y \ 
+python \
+snmp \
+lynx-cur \
+xvfb \
+wkhtmltopdf
+  
+CMD [ "python", "/app/heatmap.py" ]
