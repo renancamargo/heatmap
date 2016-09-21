@@ -8,4 +8,4 @@ wkhtmltopdf
 
 RUN mkdir -vp /app
   
-CMD [ "python", "/app/heatmap.py" ]
+CMD [ "python", "/repository/python/heatmap.py" ]
