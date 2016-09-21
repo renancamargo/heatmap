@@ -5,5 +5,7 @@ python \
 snmp \
 xvfb \
 wkhtmltopdf
+
+RUN mkdir -vp /app
   
 CMD [ "python", "/app/heatmap.py" ]
