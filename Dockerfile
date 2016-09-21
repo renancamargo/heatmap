@@ -6,6 +6,4 @@ snmp \
 xvfb \
 wkhtmltopdf
 
-RUN mkdir -vp /app
-  
 CMD [ "python", "/repository/python/heatmap.py" ]
